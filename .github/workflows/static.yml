@@ -33,12 +33,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Create build
-        run: |
-          mkdir build
-          cp -r public/* build/
-          cp -r src/* build/
-          cp -r dist/data/* build/data/
+      # - name: Create build
+      #   run: |
+      #     mkdir build
+      #     cp -r public/* build/
+      #     cp -r src/* build/
+      #     cp -r dist/data/* build/data/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
