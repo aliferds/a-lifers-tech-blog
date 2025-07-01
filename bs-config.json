@@ -9,7 +9,7 @@
     "baseDir": ".",
     "middleware": {
       "1": {
-        "route": "/home/",
+        "route": "/a-lifers-tech-blog/",
         "handle": 
           "function (req, res, next) { \n            if (req.url.indexOf('.') === -1 && req.url !== '/') { \n                req.url = '/index.html'; \n            } \n            next(); \n        }"
       }

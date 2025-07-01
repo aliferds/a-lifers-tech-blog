@@ -72,7 +72,7 @@ function togglePostContainers(showFixed, showDynamic) {
 // Função principal para gerenciar a rota e o conteúdo
 async function handleRoute() {
     let path = window.location.pathname; 
-    let category = path === '/' ? 'home' : path.substring(1).split('/')[0]; // 'home' para a rota raiz
+    let category = path === '/' ? 'a-lifers-tech-blog/' : path.substring(1).split('/')[0]; // 'home' para a rota raiz
 
     // Lógica para mostrar posts fixos na home
     if (category === 'home') {
