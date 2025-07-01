@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "titulo": "Latest Tech Trends",
+    "dataPublicacao": "2025-01-01",
+    "autor": "Alifer D. Silva",
+    "categoria": "latest", 
+    "imagemCapa": "https://via.placeholder.com/800x400/007BFF/FFFFFF?text=Latest+Trends",
+    "conteudo": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  },
+  {
+    "id": "2",
+    "titulo": "DevLearning: Best Practices",
+    "dataPublicacao": "2025-01-02",
+    "autor": "Alifer D. Silva",
+    "categoria": "devguide",  
+    "imagemCapa": "https://via.placeholder.com/800x400/28A745/FFFFFF?text=DevLearning",
+    "conteudo": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  },
+  {
+    "id": "3",
+    "titulo": "Soft Skills for Developers",
+    "dataPublicacao": "2025-01-03",
+    "autor": "Alifer D. Silva",
+    "categoria": "softskills", 
+    "imagemCapa": "https://via.placeholder.com/800x400/DC3545/FFFFFF?text=SoftSkills",
+    "conteudo": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  },
+  {
+    "id": "4",
+    "titulo": "Tech Trends: What's Next?",
+    "dataPublicacao": "2025-01-04",
+    "autor": "Alifer D. Silva",
+    "categoria": "techtrends", 
+    "imagemCapa": "https://via.placeholder.com/800x400/6610F2/FFFFFF?text=TechTrends",
+    "conteudo": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  },
+  {
+    "id": "5",
+    "titulo": "Tech Reviews: Latest Gadgets",
+    "dataPublicacao": "2025-01-04",
+    "autor": "Alifer D. Silva",
+    "categoria": "reviews", 
+    "imagemCapa": "https://via.placeholder.com/800x400/FD7E14/FFFFFF?text=Reviews",
+    "conteudo": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  },
+  {
+    "id": "6",
+    "titulo": "Tech Culture: A Deep Dive",
+    "dataPublicacao": "2025-01-05",
+    "autor": "Alifer D. Silva",
+    "categoria": "techcult", 
+    "imagemCapa": "https://via.placeholder.com/800x400/20C997/FFFFFF?text=TechCult",
+    "conteudo": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  }
+]
