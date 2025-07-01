@@ -7,12 +7,7 @@
   ],
   "server": {
     "baseDir": ".",
-    "middleware": {
-      "1": {
-        "route": "/a-lifers-tech-blog/",
-        "handle": 
-          "function (req, res, next) { \n            if (req.url.indexOf('.') === -1 && req.url !== '/') { \n                req.url = '/index.html'; \n            } \n            next(); \n        }"
-      }
-    }
+    "middleware":
+          "function (req, res, next) {const BASE_REPO_PATH_LOCAL = '/a-lifers-tech-blog'; let requestedPath = req.url; if (isLocalhost() && requestedPath.startsWith(BASE_REPO_PATH)) { requestedPath = requestedPath.substring(BASE_REPO_PATH.length); } if (requestedPath.indexOf('.') === -1 && requestedPath !== '/') { req.url = '/index.html'; } next();"
   }
 }
