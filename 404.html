@@ -5,29 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading...</title>
     <script>
-        // Pega o caminho completo da URL atual (incluindo o subdiretório do Pages se for um repositório de projeto)
-        var path = window.location.pathname;
-
-        // Define o caminho base do seu repositório GitHub Pages
-        // EXEMPLO: Se seu blog está em https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
-        //          então base_url_segment é '/SEU_REPOSITORIO'
-        // Se seu blog está em https://SEU_USUARIO.github.io/ (repositório de usuário/org)
-        //          então base_url_segment é '' (string vazia)
-        // Você PRECISA ajustar isso para o seu caso!
-        // Exemplo para um repositório chamado 'meu-blog':
-        var base_url_segment = '/a-lifers-tech-blog'; // <-- ATENÇÃO: SUBSTITUA PELO NOME DO SEU REPOSITÓRIO
-
-        // Se for um repositório de usuário/organização (ex: usuario.github.io), a base_url_segment é vazia
-        // var base_url_segment = ''; // Se seu repo é seu-usuario.github.io
-
-        // Constrói a URL para redirecionar para o index.html com a rota original
-        // O uso de `replaceState` evita um novo carregamento da página no histórico do navegador
-        // e permite que seu JS de roteamento (handleRoute) detecte a URL correta.
-        window.onload = function() {
-            var newPath = base_url_segment + '/index.html' + path; // Adiciona o path original
-            window.history.replaceState(null, null, newPath); // Atualiza a URL no navegador
-            window.location.replace(base_url_segment + '/'); // Redireciona para a raiz do seu site SPA
-        };
+        var baseRepoPath = '/a-lifers-tech-blog'; // Este ainda precisa ser o nome do seu repositório
+        var fullPath = window.location.pathname;
+        var spaRoute = fullPath.replace(baseRepoPath, ''); // Remove o prefixo do repositório
+        
+        // Constrói a URL para a raiz do blog no GitHub Pages, passando a rota SPA via query param
+        // Ex: https://aliferds.github.io/a-lifers-tech-blog/?devguides
+        var newUrl = baseRepoPath + '/?' + spaRoute.substring(1); 
+        
+        window.history.replaceState(null, null, newUrl);
+        window.location.replace(newUrl);
     </script>
 </head>
 <body>
