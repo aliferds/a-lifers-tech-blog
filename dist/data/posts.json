@@ -1,24 +1,24 @@
 [
   {
     "id": "1",
-    "titulo": "Latest Tech Trends",
+    "titulo": "Explorando as Novidades do JavaScript Moderno",
     "dataPublicacao": "2025-01-01",
     "autor": "Alifer D. Silva",
-    "tags": ["trends", "technology", "innovation"],
+    "tags": ["Javascript", "technology", "latest"],
     "categoria": "latest", 
-    "imagemCapa": "https://via.placeholder.com/800x400/007BFF/FFFFFF?text=Latest+Trends",
-    "preview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    "imagemCapa": "/public/assets/images/Programming_code.jpg",
+    "preview": "<p>Um guia completo sobre as novas funcionalidades do ES2024 e como elas podem otimizar seu código.</p>",
     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>"
   },
   {
     "id": "2",
-    "titulo": "DevLearning: Best Practices",
+    "titulo": "Os Desafios da Segurança Cibernética em 2025",
     "dataPublicacao": "2025-01-02",
     "autor": "Alifer D. Silva",
     "tags": ["development", "learning", "best practices"],
     "categoria": "devguide",  
-    "imagemCapa": "https://via.placeholder.com/800x400/28A745/FFFFFF?text=DevLearning",
-    "preview": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    "imagemCapa": "/public/assets/images/Computer_locked.jpg",
+    "preview": "<p>Análise das principais ameaças e estratégias para proteger seus dados e sistemas.</p>",
     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>"
   },
   {
