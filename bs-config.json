@@ -1,0 +1,18 @@
+{
+  "port": 5500,
+  "files": [
+    "./public/**/*.{html,css,js}",
+    "./src/**/*.js",
+    "./dist/data/**/*.json"
+  ],
+  "server": {
+    "baseDir": "./public",
+    "middleware": {
+      "1": {
+        "route": "/home/",
+        "handle": 
+          "function (req, res, next) { \n            if (req.url.indexOf('.') === -1 && req.url !== '/') { \n                req.url = '/index.html'; \n            } \n            next(); \n        }"
+      }
+    }
+  }
+}
