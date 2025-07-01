@@ -13,6 +13,7 @@ if (navBrand) {
         let targetPath;
         targetPath = BASE_REPO_PATH + '/'; 
         window.history.pushState({ path: targetPath }, '', targetPath);
+        toggleHeaderVisibility();
         handleRoute();
     });
 }
@@ -113,6 +114,14 @@ function filterPosts(allPosts, type, value) {
     return []; // Retorna um array vazio se o tipo não for reconhecido
 }
 
+function toggleHeaderVisibility() {
+    const header = document.getElementById('blog-header');
+    console.log("toggleHeaderVisibility called.");
+
+    const url = Window.location.href;
+    console.log("\t\tURL:\t", url.toString());
+}
+
 
 // // Função para exibir/ocultar os containers de posts
 // function togglePostContainers(showFixed, showDynamic) {
@@ -144,7 +153,7 @@ async function handleRoute() {
     let cleanedPath = path.startsWith(BASE_REPO_PATH) ? path.substring(BASE_REPO_PATH.length) : path;
     if (cleanedPath === '') cleanedPath = '/';
 
-    console.log("handleRoute called. Cleaned Path for routing:", cleanedPath); // Ajuda na depuração
+    // console.log("handleRoute called. Cleaned Path for routing:", cleanedPath); // Ajuda na depuração
 
     const postMatch = cleanedPath.match(/^\/post\/(\d+)$/);
     const categoryMatch = cleanedPath.match(/^\/([a-zA-Z0-9_-]+)$/);
@@ -284,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     });
     // }
 
-document.addEventListener('click', (event) => {
+    document.addEventListener('click', (event) => {
         const target = event.target.closest('a'); // Pega o 'a' mais próximo do elemento clicado
         if (!target) return; // Se o clique não foi em um link, sai
 
@@ -309,6 +318,8 @@ document.addEventListener('click', (event) => {
 
     // Listener para o botão Voltar/Avançar do navegador
     window.addEventListener('popstate', handleRoute);
+
+    toggleHeaderVisibility(); // Exibe/oculta o cabeçalho baseado na URL atual
 
     // Renderiza o conteúdo inicial baseado na URL
     handleRoute();
