@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <script>
+        // Pega o caminho completo da URL atual (incluindo o subdiretório do Pages se for um repositório de projeto)
+        var path = window.location.pathname;
+
+        // Define o caminho base do seu repositório GitHub Pages
+        // EXEMPLO: Se seu blog está em https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
+        //          então base_url_segment é '/SEU_REPOSITORIO'
+        // Se seu blog está em https://SEU_USUARIO.github.io/ (repositório de usuário/org)
+        //          então base_url_segment é '' (string vazia)
+        // Você PRECISA ajustar isso para o seu caso!
+        // Exemplo para um repositório chamado 'meu-blog':
+        var base_url_segment = '/a-lifers-tech-blog'; // <-- ATENÇÃO: SUBSTITUA PELO NOME DO SEU REPOSITÓRIO
+
+        // Se for um repositório de usuário/organização (ex: usuario.github.io), a base_url_segment é vazia
+        // var base_url_segment = ''; // Se seu repo é seu-usuario.github.io
+
+        // Constrói a URL para redirecionar para o index.html com a rota original
+        // O uso de `replaceState` evita um novo carregamento da página no histórico do navegador
+        // e permite que seu JS de roteamento (handleRoute) detecte a URL correta.
+        window.onload = function() {
+            var newPath = base_url_segment + '/index.html' + path; // Adiciona o path original
+            window.history.replaceState(null, null, newPath); // Atualiza a URL no navegador
+            window.location.replace(base_url_segment + '/'); // Redireciona para a raiz do seu site SPA
+        };
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please wait or go to the <a href="/">homepage</a>.</p>
+</body>
+</html>
