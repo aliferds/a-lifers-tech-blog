@@ -56,7 +56,7 @@ function renderDynamicPosts(postsToDisplay, containerId = 'posts-container') {
                 <h2 class="h4">${post.titulo}</h2>
                 <p class="text-muted">Publicado em: ${new Date(post.dataPublicacao).toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })} por <strong>${post.autor}</strong></p>
                 ${post.imagemCapa ? `<img src="${post.imagemCapa}" alt="Capa do post: ${post.titulo}" class="img-fluid mb-3">` : ''}
-                <p>${post.conteudo.substring(0, 150)}...</p>
+                <p>${post.preview.substring(0, 150)}...</p>
             </a>
         `;
         postsContainer.appendChild(postElement);
@@ -87,7 +87,7 @@ function renderSinglePost(post) {
             <p class="text-muted">Publicado em: ${new Date(post.dataPublicacao).toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })} por <strong>${post.autor}</strong></p>
             ${post.imagemCapa ? `<img src="${post.imagemCapa}" alt="Capa do post: ${post.titulo}" class="img-fluid mb-3">` : ''}
             <div class="post-content mb-4">
-                ${post.conteudo}
+                ${post.preview}
             </div>
             ${tagsHtml ? `<div class="tags-section">Tags: ${tagsHtml}</div>` : ''}
             <hr>
