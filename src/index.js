@@ -118,7 +118,7 @@ function toggleHeaderVisibility() {
     const header = document.getElementById('blog-header');
     console.log("toggleHeaderVisibility called.");
 
-    const url = Window.location.href;
+    const url = window.location.href;
     console.log("\t\tURL:\t", url.toString());
 }
 
@@ -207,70 +207,161 @@ function updateActiveClass(currentCategory) {
 }
 
 const homePageContent = `
-    <section class="home-section my-4 col-md-8">
-        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+  <div class="row">
+    <div class="col-md-8">
+      <section id="fixed-posts">
+        <section class="home-section my-4">
+
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/400x200?text=Post+Destaque+1" class="card-img-top" alt="Imagem do Post Destaque 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Explorando as Novidades do JavaScript Moderno</h5>
-                        <p class="card-text">Um guia completo sobre as novas funcionalidades do ES2024 e como elas podem otimizar seu código.</p>
-                        <a href="${BASE_REPO_PATH}/post/1" class="stretched-link post-card-link" data-post-id="1">Leia Mais</a>
-                    </div>
+              <div class="card h-100 shadow-sm">
+
+                <img 
+                  src="/public/assets/images/Programming_code.jpg" 
+                  class="card-img-top" 
+                  alt="Imagem do Post Destaque 1">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Explorando as Novidades do JavaScript Moderno
+                  </h5>
+                  <p class="card-text">
+                    Um guia completo sobre as novas funcionalidades do
+                    ES2024 e como elas podem otimizar seu código.
+                  </p>
+                  <a 
+                    href="/post/1" 
+                    class="stretched-link" 
+                    data-post-id="1">
+                      Leia Mais
+                  </a>
                 </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img 
+                  src="/public/assets/images/Computer_locked.jpg" 
+                  class="card-img-top" 
+                  alt="Imagem do Post Destaque 2">
+
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Os Desafios da Segurança Cibernética em 2025
+                  </h5>
+                  <p class="card-text">
+                    Análise das principais ameaças e estratégias para 
+                    proteger seus dados e sistemas.
+                  </p>
+                  <a 
+                    href="/post/2" 
+                    class="stretched-link" 
+                    data-post-id="2">
+                      Leia Mais
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img 
+                  src="/public/assets/images/ai.jpg" 
+                  class="card-img-top" 
+                  alt="Imagem do Post Destaque 3">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    IA no Desenvolvimento: Automação e Otimização
+                  </h5>
+                  <p class="card-text">
+                    Como a Inteligência Artificial está transformando a forma 
+                    como escrevemos código e gerenciamos projetos.
+                  </p>
+                  <a 
+                    href="/post/3" 
+                    class="stretched-link" 
+                    data-post-id="3">
+                      Leia Mais
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img 
+                  src="/public/assets/images/communication.jpg" 
+                  class="card-img-top" 
+                  alt="Imagem do Post Destaque 4">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      Soft Skills: Comunicação Eficaz para Tech Leads
+                    </h5>
+                    <p class="card-text">
+                      Desenvolva suas habilidades interpessoais para liderar 
+                      equipes de tecnologia com sucesso.
+                    </p>
+                    <a 
+                      href="/post/4" 
+                      class="stretched-link" 
+                      data-post-id="4">
+                        Leia Mais
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img 
+                  src="/public/assets/images/gadgets.jpg" 
+                  class="card-img-top" 
+                  alt="Imagem do Post Destaque 5">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Review: Os Melhores Gadgets para Programadores
+                  </h5>
+                  <p class="card-text">
+                    Uma análise detalhada dos dispositivos que todo 
+                    desenvolvedor deveria considerar em 2025.
+                  </p>
+                  <a 
+                    href="/post/5" 
+                    class="stretched-link" 
+                    data-post-id="5">
+                      Leia Mais
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/400x200?text=Post+Destaque+2" class="card-img-top" alt="Imagem do Post Destaque 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Os Desafios da Segurança Cibernética em 2025</h5>
-                        <p class="card-text">Análise das principais ameaças e estratégias para proteger seus dados e sistemas.</p>
-                        <a href="${BASE_REPO_PATH}/post/2" class="stretched-link post-card-link" data-post-id="2">Leia Mais</a>
-                    </div>
+              <div class="card h-100 shadow-sm">
+                <img 
+                  src="/public/assets/images/tech-cult.jpg" 
+                  class="card-img-top" 
+                  alt="Imagem do Post Destaque 6">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Cultura Dev: Inovação e Colaboração no Ambiente de Trabalho
+                  </h5>
+                  <p class="card-text">
+                    Explore como as empresas de tecnologia estão fomentando 
+                    ambientes criativos e produtivos.
+                  </p>
+                  <a 
+                    href="/post/6" 
+                    class="stretched-link" 
+                    data-post-id="6">
+                      Leia Mais
+                  </a>
                 </div>
+              </div>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/400x200?text=Post+Destaque+3" class="card-img-top" alt="Imagem do Post Destaque 3">
-                    <div class="card-body">
-                        <h5 class="card-title">IA no Desenvolvimento: Automação e Otimização</h5>
-                        <p class="card-text">Como a Inteligência Artificial está transformando a forma como escrevemos código e gerenciamos projetos.</p>
-                        <a href="${BASE_REPO_PATH}/post/3" class="stretched-link post-card-link" data-post-id="3">Leia Mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/400x200?text=Post+Destaque+4" class="card-img-top" alt="Imagem do Post Destaque 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Soft Skills: Comunicação Eficaz para Tech Leads</h5>
-                        <p class="card-text">Desenvolva suas habilidades interpessoais para liderar equipes de tecnologia com sucesso.</p>
-                        <a href="${BASE_REPO_PATH}/post/4" class="stretched-link post-card-link" data-post-id="4">Leia Mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/400x200?text=Post+Destaque+5" class="card-img-top" alt="Imagem do Post Destaque 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Review: Os Melhores Gadgets para Programadores</h5>
-                        <p class="card-text">Uma análise detalhada dos dispositivos que todo desenvolvedor deveria considerar em 2025.</p>
-                        <a href="${BASE_REPO_PATH}/post/5" class="stretched-link post-card-link" data-post-id="5">Leia Mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/400x200?text=Post+Destaque+6" class="card-img-top" alt="Imagem do Post Destaque 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Cultura Dev: Inovação e Colaboração no Ambiente de Trabalho</h5>
-                        <p class="card-text">Explore como as empresas de tecnologia estão fomentando ambientes criativos e produtivos.</p>
-                        <a href="${BASE_REPO_PATH}/post/6" class="stretched-link post-card-link" data-post-id="6">Leia Mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
 `;
 
 document.addEventListener('DOMContentLoaded', () => {
