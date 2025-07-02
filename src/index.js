@@ -1,5 +1,5 @@
 // src/index.js
-const BASE_REPO_PATH = '/a-lifers-tech-blog';
+let BASE_REPO_PATH = '/a-lifers-tech-blog';
 
 function isLocalhost() {
     const hostname = window.location.hostname;
@@ -18,10 +18,15 @@ if (navBrand) {
     });
 }
 
+if(isLocalhost()) {
+    console.log("Você está rodando o blog localmente.");
+    BASE_REPO_PATH = ''; // Se estiver rodando localmente, não usa o prefixo do repositório
+}
+
 // Função para buscar os posts (agora para as categorias dinâmicas)
 async function fetchPosts() {
     try {
-        const response = await fetch(`${BASE_REPO_PATH}/data/posts.json`); 
+        const response = await fetch(`${BASE_REPO_PATH}/dist/data/posts.json`); 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
